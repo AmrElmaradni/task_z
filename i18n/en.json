@@ -1,0 +1,20 @@
+{
+    "login": "Login",
+    "createAccount": "Create Account",
+    "phone": "Phone",
+    "password": "Password",
+    "home": "Home",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "favorites": "Favorites",
+    "search": "Search",
+    "wallpaperDetails": "Wallpaper Details",
+    "validatePhone": "Please write your phone",
+    "validatePassword": "Password must contain 8 characters or more",
+    "validateName": "Please write the name",
+    "validateEmail": "please write email",
+    "validateEmailStructure": "please write email correctly",
+    "validatePhoneStartWithZero": "Phone number must not start with 0",
+    "validatePhoneContainTenNumbers": "Phone number must consist of {} numbers"
+}

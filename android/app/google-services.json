@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "413787244623",
+    "project_id": "task-z-ecbb3",
+    "storage_bucket": "task-z-ecbb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413787244623:android:d1c7328b910b45c206823a",
+        "android_client_info": {
+          "package_name": "com.amr.task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUsj78HaWf6DdAVM8DVp5LxUYZez_GZvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,15 +15,13 @@ import 'view/layout/splash/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await Hive.initFlutter();
   Hive.registerAdapter(FavoriteModelAdapter());
   Hive.registerAdapter(WallpaperModelAdapter());
   Hive.registerAdapter(SrcAdapter());
-  Future.wait([
-    EasyLocalization.ensureInitialized(),
-    Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform),
-    Hive.openBox<FavoriteModel>('favorite'),
-  ]);
+  await Hive.openBox<FavoriteModel>('favorite');
 
   runApp(
     EasyLocalization(

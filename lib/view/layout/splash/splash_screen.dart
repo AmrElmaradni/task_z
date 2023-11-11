@@ -19,26 +19,26 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
+    final controller = context.read<AuthController>();
     Future.microtask(() {
-      final controller = context.read<AuthController>();
       controller.initial();
-      Future.delayed(
-        const Duration(seconds: 2),
-        () {
-          if (controller.user != null) {
-            Navigator.pushReplacementNamed(
-              context,
-              HomeScreen.routeName,
-            );
-          } else {
-            Navigator.pushReplacementNamed(
-              context,
-              LoginScreen.routeName,
-            );
-          }
-        },
-      );
     });
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        if (controller.user != null) {
+          Navigator.pushReplacementNamed(
+            context,
+            HomeScreen.routeName,
+          );
+        } else {
+          Navigator.pushReplacementNamed(
+            context,
+            LoginScreen.routeName,
+          );
+        }
+      },
+    );
     super.initState();
   }
 
